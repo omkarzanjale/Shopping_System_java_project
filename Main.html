@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<!--	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width ,initial-scale=1.0">--->
+	<title> Online Shopping System </title>
+	<link rel="stylesheet" href="css/MainCss.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bentham&family=Piazzolla:ital,wght@0,600;1,300;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="navigation">
+		<div class="inner-row">
+			<nav> 
+				<ul>
+					<li><a href="Main.html"> Home </a></li>
+					<li><a href="Account.jsp"> Account </a></li>
+					<li><a href="Category.jsp"> Product </a></li>
+					<li><a href="ContactUs.html"> Contact </a></li>
+					<li><a href="AboutUs.html"> About Us </a></li>
+				</ul>
+				<a href="Cart.jsp"><img src="Images/cart.png" width="20px" height="19px"></a>
+			</nav>
+		</div>
+	</div>
+	<!----------------------------Category bar-------------------------->
+	<div class="cat_bar">
+		<div class="cat_img">
+			<a href="Category.jsp"> 
+				<img src="Images/list.png" width="30%" height="auto" /> 
+				<h5>All Categories</h5>
+			</a>
+		</div>
+		<div class="cat_img">
+			<form action="AllProduct.jsp">
+				<input type="hidden" name="category" value="Mobile">
+				<input type="image" name="category" value="Mobiles" src="Images/smartphone.png" width="30%" height="auto"/>
+				<h5>Smart Phone</h5>
+			</form>
+		</div>
+		<div class="cat_img">
+			<form action="AllProduct.jsp">
+				<input type="hidden" name="category" value="Mens Fashion">
+				<input type="image" name="category" value="Mens Fashion" src="Images/sport-shoes.png" width="30%" height="auto"/>
+				<h5>Sport shoes</h5>         
+			</form>
+		</div>
+		<div class="cat_img">
+			<form action="AllProduct.jsp">
+				<input type="hidden" name="category" value="Television">
+				<input type="image" name="category" value="Television" src="Images/hd.png" width="30%" height="auto"/>
+				<h5>Android TV's</h5>   
+			</form>
+		</div>
+		<div class="cat_img">
+			<form action="AllProduct.jsp">
+				<input type="hidden" name="category" value="Mens Fashion">
+				<input type="image" name="category" value="Mens Fashion" src="Images/t-shirt (1).png" width="30%" height="auto"/>
+				<h5>Mens Fashion</h5>          
+			</form>
+		</div>
+		<div class="cat_img">
+			<form action="AllProduct.jsp">
+				<input type="hidden" name="category" value="Style">
+				<input type="image" name="category" value="Style" src="Images/t-shirt.png" width="30%" height="auto"/>
+				<h5>Kids Fashion</h5>         
+			</form>
+		</div>
+	</div>
+
+	<div class="header">
+	<div class="container">
+		
+		<div class="title">
+			<div class="column">
+				<h1>REALME NOTE...</h1>
+				<P> Intruducing the all new REALME 7i <br> Order now </P>
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="m009" />
+					<input type="submit" class="button" value="Explore Now &#10141;">
+				</form>
+			</div>
+			<div class="column">
+				<img src="Images/deal.jpg "height="230px" width="350px">
+			</div>
+		</div>	
+	</div>  <!---container div-->
+	</div>	<!---header div-->
+	
+<!------------product category------------->
+	<div class="product">
+		<div class="small-container">
+			<div class="title">
+				<div class="column3">
+					<form action="Product.jsp">
+					<input type="hidden" name="product" value="m001" />
+					<input name="product" type="image" src="Images/featured1.jpg" width="100%" height="100%">
+					</form>
+				</div>
+				<div class="column3">
+					<form action="Product.jsp">
+					<input type="hidden" name="product" value="m003" />
+					<input type="image" name="product" src="Images/Vivo-Y91i.png" width="100%" height="455px"/>
+					</form>
+				</div>
+				<div class="column3">
+					<form action="Product.jsp">
+					<input type="hidden" name="product" value="m002" />
+					<input type="image" name="product" src="Images/featured3.jpg" width="100%" height="100%"/>
+					</form>
+				</div>
+			</div>
+			<form action="AllProduct.jsp">
+				<input type="hidden" name="category" value="Mobile" />
+				<input type="submit" class="button" value="See More &#10141;">
+			</form>
+		</div> <!---Featured-container div----->
+	</div><!----product div------>
+
+<!------------product category------------->
+	<div class="small-container">
+		<h2 class="heading"> Featured Products </h2>
+		<div class="title">
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="t003" />
+					<input type="image" name="product" src="Images/tshirt14.jpeg" width="100%" height="100%"/>
+					<h4> T-Shirt </h4>
+					<P> White-Yellow-Black <br> Rs.499.00 </P>
+				</form>
+			</div>
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="w001" /><BR><BR>
+					<input type="image" name="product" src="Images/latest.jpeg" width="100%" height="100%"/>
+					<h4> <br>Smart Watch</h4>
+					<P> Stylish Black <br> Rs.999.00 </P>
+				</form>
+			</div>
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="t002" /><br>
+					<input type="image" name="product" src="Images/tshirt21.jpeg" width="100%" height="100%"/>
+					<h4><br> T-Shirt</h4>
+					<P> Black Lines <br> Rs.399.00 </P>
+				</form>
+			</div>
+			
+		</div>
+		
+		<!------latest product section------>
+		<h2 class="heading"> Latest Products </h2>
+
+		<div class="title">
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="s002" />
+					<input type="image" name="product" src="Images/category-1.jpg" width="300px" height="500px"/>
+					<h4>SPARX SHOES</h4>
+					<P> ORANGE <br> Rs.1600.00 </P>
+				</form>
+			</div>
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="h001" />
+					<input type="image" name="product" src="Images/headphones_2.png" width="300px" height="500px"/>
+					<h4>VIPPO HEADPHONE</h4>
+					<P> Black 12hr playback <br> Rs.899.00 </P>
+				</form>
+			</div>
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="w002" />
+					<input type="image" name="product" src="Images/product-8.jpg" width="300px" height="500p"/>
+					<h4>FOSSIL WATCH</h4>
+					<P> Stylish Black Mens Watch <br> Rs.499.00 </P>
+				</form>
+			</div>
+		</div>
+
+		<div class="title">
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="m005" />
+					<input type="image" name="product" src="Images/product2.jpeg" width="90%" height="70%"/>
+					<h4> POCO M2</h4>
+					<P> 6/128GB Black <br> Rs.16100.00 </P>
+				</form>
+			</div>
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="m004" />
+					<input type="image" name="product" src="Images/m004.jpeg" width="90%" height="70%"/>
+					<h4>SAMSUNG A51</h4>
+					<P> 4/64GB Black <br> Rs.18000.00 </P>
+				</form>
+			</div>
+			<div class="column4">
+				<form action="Product.jsp">
+					<input type="hidden" name="product" value="m002" />
+					<input type="image" name="product" src="Images/m006.jpeg" width="300px" height="540px"/>
+					<h4>IPHONE 11</h4>
+					<P> 4/128GB Gray <br> Rs.90000.00 </P>
+				</form>
+			</div>
+		</div>
+	</div><!---small container div---->
+	
+	<div class="offers">
+		<div class="small-container">
+			<div class="title">
+				<div class="column">
+					<img class="offer-img" src="Images/tv.jpg">
+				</div>
+				<div class="column"><br><br><br>
+					<h1> EXCLUSIVE PRODUCT </h1><br>
+					<h2> REALME SMART TV </h2>
+					<small>Redefine your vision with Smart tv<br>
+							55' SLED 4k tv<br></small>
+					<form method="POST"action="Product.jsp">
+						<input type="hidden" name="product" value="tv001" />
+						<input type="submit" class="button" value="Buy Now &#10141;">
+					</form>
+					  
+				</div>
+			</div>	
+		</div>
+	</div><BR>
+	
+
+	<div class="container">
+		<div class="goto-top">
+			<a href="#"><h3> &#10141; Top Of The Page </h3> </a>
+		</div>
+	</div>
+	
+	<!---------footer section---------->
+	<div class="footer">
+		<div class="container">				
+			<div class="title">
+				<div class="footer-col1">
+					<p>ONLINE SHOPPING SYSTEM</p>
+					<div class="app-logo">
+						<img src="Images/logo.jpg">
+					</div>
+				</div>
+				<div class="footer-col">		
+					<p>  </p><br>
+					<p> Your Account </p><br>
+					<p> Customer Services </p> 
+				</div>
+			</div>
+			<hr>
+				<p class="copyright">Copyright OMKAR & VISHAKHA</p>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

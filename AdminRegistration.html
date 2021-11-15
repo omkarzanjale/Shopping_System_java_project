@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Admin Registration</title>
+    <link rel="stylesheet" href="css/Form.css">
+</head>
+<body>
+    <div class="skip">
+        <div class="container">
+            <div class="heading-panel">
+                <h2>New Admin Registration</h2>
+            </div>
+            <div class="body-panel">
+                <table>
+                    <form method="post" action="AdminRegistrationConnect.jsp">
+                        <tr>
+                        <div class="form-panel">
+                            <td><label for="firstName">Name</label></td>
+                            <td><input type="text" class="form-control" name="fname" required/></td>
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="form-panel">
+                                <td><label for="email">Email</label></td>
+                                <td><input type="email" class="form-control" name="email" required/></td>
+                            </div>
+                        </tr>
+                        <tr>
+                        <div class="form-panel">
+                            <td><label for="password">Password</label></td>
+                            <td><input type="password" class="form-control" name="password" required/></td>
+                        </div>
+                        </tr>
+                        
+                        <tr>
+                        <div class="form-panel">
+                            <td><label for="city">City</label></td>
+                            <td><select class="select-control" name = "city" required>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="nagpur">Nagpur</option>
+                                <option value="nashik">Nashik</option>
+                                <option value="pune">Pune</option>
+                            <select></td>
+                        </div>
+                        </tr>
+                        <tr>
+                        <div class="form-panel">
+                            <td><label for="pinCode">Pin Code</label></td>
+                            <td><input type="number" class="form-control" name="pincode" required/></td>
+                        </div>
+                        </tr>
+                        <tr>
+                            <div class="form-panel">
+                                <td><label for="phoneNumber">Contact</label></td>
+                                <td><input type="tel" class="form-control" name="contact" pattern="[0-9]{10}" required/></td>
+                            </div>
+                        </tr>
+                        <tr>
+                        <div class="form-button">
+                            <td><br><button type="submit" class="submitbtn">Sign Up</button></td>
+                        </div>
+                        </tr>
+                    </form>
+                </table>
+            </div>                              <!----------------body panel div------------------->  
+        </div><br>                              <!----------------Container div-------------------->
+        <a href="AdminlLgin.html">Already have account ?</a>
+    </div>                                      <!-----------------skip div------------------------>
+</body>
+</html>

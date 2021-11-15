@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/Form.css">
+</head>
+<body>
+    <div class="skip">
+        <div class="container">
+            <div class="heading-panel">
+                <h2>AdminLogin</h2>
+            </div>
+            <div class="body-panel">
+               
+                    <form action="AdminLoginConnect.jsp" method="post">
+                        <br>
+                        <input type="email" name="username" class="form-control" placeholder="           Enter Email" required/>
+                        <br><br>
+                        <input type="password" name="password" class="form-control" placeholder="       Enter Password" required/>
+                        <br><br>
+                        <input type="checkbox" name="showpassword"/>Show Password
+                        <br><br>
+                        <button type="submit" class="loginbtn">Login</button>
+                    </form>
+            </div>
+        </div>      <!------------------container div------------->
+        <br><a href="AdminRegistration.html">Register</a>
+    </div>          <!------------------skip div------------------>    
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!--------<meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width ,initial-scale=1.0">--->
+        <title> Online Shopping System </title>
+        <link rel="stylesheet" href="css/MainCss.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Piazzolla:ital,wght@0,600;1,300;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/Form.css">
+        <style type="text/css">
+            .body-panel{
+                height: 530px;
+                align-items:center;
+                display: flex;
+                padding-left: 500px;
+            }
+        </style>
+ 
+</head>
+<body style="text-align: center;">
+    <div class="navigation">
+		<div class="inner-row">
+			<nav> 
+				<ul>
+                    
+					<li><a href="Account.jsp"> Account </a></li>
+					
+				</ul>
+				<img src="Images/cart.png" width="20px" height="19px" >
+			</nav>
+			
+		</div>
+	</div>
+    <!-----------------------------------add new Product-------------->
+    <div class="body-panel">
+        <table>
+            <form method="post" action="NewProductConnect.jsp">
+                <tr>
+                <div class="form-panel">
+                    <td><label for="prid">Product id </label></td>
+                    <td><input type="text" class="form-control" name="prid" placeholder="Unique id" required/></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="form-panel">
+                    <td><label for="prname">Product Name </label></td>
+                    <td><input type="text" class="form-control" name="prname" required/></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="form-panel">
+                    <td><label for="Brand">Brand </label></td>
+                    <td><input type="text" class="form-control" name="brand" required/></td>
+                </div>
+                </tr>
+                <tr>
+                    <div class="form-panel">
+                        <td><label for="category">Category</label></td>
+                        <td><select class="select-control" name = "category" required>
+                            <option value="1">Mobile</option>
+                            <option value="2">Television</option>
+                            <option value="3">Kids Fashion</option>
+                            <option value="4">Mens Fashion</option>
+                        <select></td>
+                    </div>
+                </tr>
+                <tr>
+                <div class="form-panel">
+                    <td><label for="description">description</label></td>
+                    <td><input type="text" class="form-control" name="description" required/></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="form-panel">
+                    <td><label for="price">Price</label></td>
+                    <td><input type="number" class="form-control" name="price" required/></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="form-panel">
+                    <td><label for="discount">Discount</label></td>
+                    <td><input type="number" class="form-control" name="discount" required/></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="form-panel">
+                    <td><label for="quantity">Quantity</label></td>
+                    <td><input type="number" class="form-control" name="stock" required/></td>
+                </div>
+                </tr>
+                <tr>
+                <div class="form-button">
+                    <td><br><button type="submit" class="submitbtn">Add Product</button></td>
+                </div>
+                </tr>
+            </form>
+        </table>
+    </div>
+    
+</body>
+</html>
