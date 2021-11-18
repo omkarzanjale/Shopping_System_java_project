@@ -1,5 +1,5 @@
 # Project
- JAVA Project 
+ JAVA Project -
 Online Shopping System
 * This is a web project designed using Html, css and Java. 
 * This project uses PostgreSQL database.
